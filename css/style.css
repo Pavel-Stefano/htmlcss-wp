@@ -96,6 +96,16 @@ nav li a:hover {
     line-height: 40px;
 }
 
+.hoverlay:{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .hoverlay::before{
     content: '';
     position: absolute;
@@ -117,6 +127,10 @@ nav li a:hover {
 
 .colonna-left, .colonna-right  {
     width: 20%;
+}
+
+.logo-image {
+    position: relative;
 }
 
 .colonna-left img, .parte-centrale img, .colonna-right img {
