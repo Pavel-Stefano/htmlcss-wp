@@ -66,9 +66,6 @@ nav li a:hover {
 .banner {
     margin-top: 20px;
     height: 500px;
-    /* background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center; */
     border-radius: 20px;
     position: relative;
     color: white;
@@ -96,15 +93,7 @@ nav li a:hover {
     line-height: 40px;
 }
 
-.hoverlay:{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-}
+
 
 .hoverlay::before{
     content: '';
@@ -115,6 +104,7 @@ nav li a:hover {
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 
 /* fine - header */
 
@@ -127,9 +117,10 @@ nav li a:hover {
 
 .colonna-left, .colonna-right  {
     width: 20%;
+    position: relative;
 }
 
-.logo-image {
+.image-main {
     position: relative;
 }
 
@@ -140,12 +131,16 @@ nav li a:hover {
 .parte-centrale {
     width: calc(60% - 40px);
     margin: 0 20px;
+} 
+
+.image-main  {
+    border-radius: 20px;
+    overflow: hidden;
 }
 
  main img{
     object-fit: cover;
     height: 200px;
-    border-radius: 20PX;
 }
 
 /* Fine - main */
